@@ -18,7 +18,7 @@ struct TaiKhoan {
 //Khai báo danh sách tài khoản
 struct DanhSachTaiKhoan {
     TaiKhoan ds[MAX];
-    int SoLuong;
+    int soLuong;
 };
 
 //Liệt kê các loại giao dịch
@@ -42,5 +42,5 @@ struct GiaoDich {
 //Khai báo danh sách giao dịch
 struct DanhSachGiaoDich {
     GiaoDich ds[MAX_GD];
-    int SoLuong;
+    int soLuong;
 };
