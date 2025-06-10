@@ -12,6 +12,7 @@ struct TaiKhoan {
     int ID;
     char Ten[50];
     double SoDu;
+    bool TrangThai;
 };
 
 //Khai báo danh sách tài khoản
