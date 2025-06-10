@@ -4,7 +4,7 @@ void guiTien(TaiKhoan ds[], int n) {
     cout << "Nhap ID tai khoan muon gui tien: ";
     cin >> id;
 
-    int viTri = timTaiKhoanTheoID(ds, n, id);
+    int viTri = timTaiKhoan(ds, n, id);
     if (viTri == -1) {
         cout << "Tai khoan khong ton tai!\n";
         return;
@@ -26,6 +26,4 @@ void guiTien(TaiKhoan ds[], int n) {
     ds[viTri].SoDu += soTien;
     cout << "Giao dich thanh cong. So du moi: " << ds[viTri].SoDu << " VND\n";
 
-    // Ghi log giao dịch (tuỳ chọn)
-    // ghiLogGiaoDich(ds[viTri].ID, soTien, "Gui");
 }
